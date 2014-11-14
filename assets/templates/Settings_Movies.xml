@@ -62,6 +62,12 @@
                 <label>{{TEXT(Movie Fanart)}}</label>
                 <rightLabel>{{TEXT(PIL/Pillow not installed)}}</rightLabel>
               </oneLineMenuItem>{{CUT(NoKey:{{EVAL(['','CUT'][isPILinstalled()])}})}}
+
+              <oneLineMenuItem id="Cinema_Trailer_Amount" onSelect="toggleSettings('Cinema_Trailer_Amount', 'Settings_Movies')">
+                <label>{{TEXT(Cinema Trailers)}}</label>
+                <rightLabel>{{SETTING(cinema_trailer_amount)}}</rightLabel>
+              </oneLineMenuItem>
+
             </items>
           </menuSection>
 
